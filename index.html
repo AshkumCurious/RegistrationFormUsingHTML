@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+   
+       <center>
+           <h1>Student's Registration Form</h1> <hr><br>
+           <h2><u>Fill the details given below</u></h2>
+           <form autocomplete="on">
+               <br><br>
+            <label for="fname"><h3>Applicant's Name</h3></label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required><br><br>
+            <label for="frname"><h3>Father's Name</h3></label><br>
+            <input type="text" id="frname" name="frname" placeholder="Enter your father's name..." required><br><br>
+            <label for="mrname"><h3>Mother's Name</h3></label><br>
+            <input type="text" id="mrname" name="mrname" placeholder="Enter your mother's name..." required><br><br>
+            
+            <label for="dob"><h3>Date Of Birth</h3></label><br>
+            <input type="date" id="dob" name="dob" placeholder="Enter your birth date..." required><br><br>
+
+            <label for="phone"><h3>Phone Number</h3></label><br>
+            <input type="number" id="phone" name="phone" placeholder="Enter your number..." required><br><br>
+
+            <label for="email"><h3>Email Address</h3></label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required><br><br>
+
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male </label><br>  
+         <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label>
+         <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">Other</label> 
+
+
+
+
+
+            <label for="courses"><h3>Branch</h3></label><br>
+             <select name="courses" id="courses" required>
+                <option value="none"><h5>Select</h5></option>
+                 <option value="cse"><h5>CSE</h5></option>
+                 <option value="it"><h5>I.T.</h5></option>
+                 <option value="ece"><h5>ECE</h5></option>
+                 <option value="mech"><h5>MECH</h5></option>
+             </select><br><br>
+
+             <label for="password"><h3>Create Password</h3></label><br>
+             <input type="password" name="password" id="password" placeholder="Enter your password..." required><br><br>
+
+             <label for="confirm password"><h3>Confirm Password</h3></label><br>
+             <input type="password" name="password" id="confirm password" placeholder="Confirm your password" required><br><br>
+
+             <label for="about"><h3> Something About You</h3></label><br>
+             <input type="textarea" name="about" id="about" placeholder="Write here..." rows="10" cols="100" required><br><br>
+             
+          <label for="file"><h3>Attach a file</h3></label><br>
+            <pre><input type="file"id="file" name="file" required><br><br></pre> 
+
+              <input type="submit" onclick="alert('Thanks for submitting form')" value="Submit">
+              <input type="reset"><br><br><br>
+           </form>
+        </center>
+</body>
+</html>
